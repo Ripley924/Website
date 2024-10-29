@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis & Sports Gaming Industry Consulting</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #00796b;
+            --accent-color: #c62828;
+            --light-bg: #f5f6fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/800');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #00695c;
+        }
+
+        .services {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .expertise {
+            background-color: var(--light-bg);
+            padding: 5rem 1rem;
+        }
+
+        .expertise-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .expertise h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .expertise-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .expertise-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .expertise-item ul {
+            list-style-type: none;
+        }
+
+        .expertise-item li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .expertise-item li:before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sports Industry Expert</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tennis & Sports Gaming Industry Consulting</h1>
+            <p>Expert insights in tennis coaching and sports gaming industry analysis</p>
+            <a href="#contact" class="cta-button">Get Professional Insights</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-tennis-ball"></i>
+                <h3>Tennis Coaching</h3>
+                <p>Professional tennis instruction and player development programs. Technical analysis, strategy development, and personalized training plans.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Gaming Industry Analysis</h3>
+                <p>Expert insights into the sports gaming industry. Market trends, betting analysis, and strategic consulting for gaming operators and investors.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Strategic Consulting</h3>
+                <p>Comprehensive consulting services bridging the tennis and gaming sectors. Industry connections, market opportunities, and growth strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="expertise">
+        <div class="expertise-content">
+            <h2>Areas of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <h3>Tennis Expertise</h3>
+                    <ul>
+                        <li>Technical skill development</li>
+                        <li>Tournament preparation</li>
+                        <li>Performance analysis</li>
+                        <li>Player career management</li>
+                        <li>Training program design</li>
+                    </ul>
+                </div>
+                <div class="expertise-item">
+                    <h3>Gaming Industry Knowledge</h3>
+                    <ul>
+                        <li>Sports betting trends</li>
+                        <li>Market analysis and forecasting</li>
+                        <li>Regulatory compliance</li>
+                        <li>Industry partnerships</li>
+                        <li>Growth strategy development</li>
+                    </ul>
+                </div>
+                <div class="expertise-item">
+                    <h3>Consulting Services</h3>
+                    <ul>
+                        <li>Market entry strategy</li>
+                        <li>Risk assessment</li>
+                        <li>Investment advisory</li>
+                        <li>Partnership development</li>
+                        <li>Industry networking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <h2>Connect With Us</h2>
+            <p>For professional consulting services in tennis and sports gaming industry analysis</p>
+            <p>Email: contact@sportsindustryexpert.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </div>
+    </footer>
+</body>
+</html>
